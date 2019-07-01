@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <style>
+        *{margin: 0;padding: 0}
+        .wrap{
+            width:1190px;
+            margin: 0 auto;
+        }
+        a{
+            color:#2d2c2c;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#f55f80;
+        }
+        .banner{
+            background:rgb(91, 201, 233);
+            text-align: center;
+            height: 430px;
+        }
+        .inx-1F-left{
+            width: 224px;
+            height:251px;
+            float: left;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .inx-1F-left img{
+            transition:0.4s;
+        }
+        .inx-1F-left img:hover{
+            transform:scale(1.1);
+        }
+        .inx-1F-right{
+            width:966px;
+            height: 251px;
+            float: right;
+            border:1px solid #e4e4e4;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        .inx-1F-right ul li{
+            width:160px;
+            height: 251px;
+            float: left;
+            list-style: none;
+            box-sizing: border-box;
+            padding:10px;
+            font-size: 12px;
+
+        }
+        .ware{
+            height: 32px;
+        }
+        .inx-1F-right ul li+li{
+            border-left:1px dashed #cdcccc;
+        }
+        .inx-1F-right-img{
+            width:140px;
+            height:140px;
+            overflow: hidden;
+        }
+        .inx-1F-right ul li img{
+            width:140px;
+            height:140px;
+            transition:ease-in 0.4s;
+        }
+        .inx-1F-right ul li img:hover{
+            transform: scale(1.1);
+        }
+        .inx-1F-price{
+            font-size: 14px;
+            color:#f55f80;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .inx-1F-cprice{
+            color:#8e8282;
+            margin-top: 10px;
+        }
+        .inx-2F-left{
+            width:305px;
+            height:370px;
+            float: left;
+            box-sizing: border-box;
+        }
+        .inx-2F-left img{
+            width:305px;
+            height:370px;
+            margin-top: 20px;
+        }
+        .inx-2F-right{
+            width:885px;
+            height:370px;
+            float: right;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        .inx-2F-right ul li img{
+            width:285px;
+            height:180px;
+            transition: ease-in .4s;
+        }
+        .inx-2F-right ul li img:hover{
+            transform: scale(1.1);
+        }
+        .inx-2F-right ul li{
+            width:285px;
+            height:180px;
+            list-style: none;
+            float: left;
+            margin:0 0 10px 10px;
+            box-sizing: border-box;
+            overflow:hidden;
+        }
+        .like{
+            clear: both;
+            background: url("../image/index/guess_bg.jpg") repeat-x 0 center;
+            font-size: 24px;
+            padding: 20px 0;
+        }
+        .like-heart{
+            height: 30px;
+            line-height: 30px;
+            margin:0 auto;
+            width:255px;
+            padding-left: 65px;
+            background: url("../image/index/guess_love.jpg") no-repeat 30px center;
+            background-color: #fff;
+        }
+        .like-heart span{
+            font-size:16px;
+            color:#787575;
+        }
+        .inx-3F ol li{
+            width:230px;
+            border:1px solid #e3e3e3;
+            list-style: none;
+            float: left;
+            height: 320px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 14px;
+            padding: 8px;
+        }
+        .inx-3F img{
+            width:220px;
+            height:220px;
+        }
+        .inx-3F ol li+li{
+            margin-left: 10px;
+        }
+        .inx-3F-name{
+            height:40px;
+            margin-top: 5px;
+        }
+        .inx-3F-price{
+            font-size: 16px;
+            font-weight: bold;
+            color: #fc4a4a;
+        }
+    </style>
+</head>
+<body>
+    <div class="inx-cont">
+        <div class="wrap">
+            <div class="banner">
+                <img src="../image/index/954052494.jpg" alt=""/>
+            </div>
+            <div class="inx-1F-left">
+                <img src="../image/index/1342588614.jpg" alt=""/>
+            </div>
+            <div class="inx-1F-right">
+                <ul>
+                    <li>
+                        <div class="inx-1F-right-img">
+                           <img src="../image/index/SP_2000_20000646921001_01_10007.jpg" alt=""/>
+                        </div>
+                        <div class="ware"><a href="#">乐惠 虎林 优质东北大米 5kg</a></div>
+                        <div class="inx-1F-price">￥29.90</div>
+                        <div class="inx-1F-cprice">参考价：￥39.90</div>
+                    </li>
+                    <li>
+                        <div class="inx-1F-right-img">
+                            <img src="../image/index/670169751_360x360.jpg" alt=""/>
+                        </div>
+                        <div class="ware"><a href="#">欧鲜生 13香小龙虾 1800g（净虾1000克）</a></div>
+                        <div class="inx-1F-price">￥69.90</div>
+                        <div class="inx-1F-cprice">参考价：￥89.90</div>
+                    </li>
+                    <li>
+                        <div class="inx-1F-right-img">
+                             <img src="../image/index/SP_2000_20000202685001_01_10007.jpg" alt=""/>
+                        </div>
+                        <div class="ware"><a href="#">雪花清爽啤酒（组合装） 500ml*4</a></div>
+                        <div class="inx-1F-price">￥10.90</div>
+                        <div class="inx-1F-cprice">参考价：￥19.90</div>
+                    </li>
+                    <li>
+                        <div class="inx-1F-right-img">
+                            <img src="../image/index/249925258_360x360.jpg" alt=""/>
+                        </div>
+                        <div class="ware"><a href="#">中荣 巴西牛腩 1000g</a></div>
+                        <div class="inx-1F-price">￥59.90</div>
+                        <div class="inx-1F-cprice">参考价：￥79.90</div>
+                    </li>
+                    <li>
+                        <div class="inx-1F-right-img">
+                            <img src="../image/index/1200773630_360x360.jpg" alt=""/>
+                        </div>
+                        <div class="ware"><a href="#">蒙牛 特仑苏纯牛奶苗条装250ml×12盒</a></div>
+                        <div class="inx-1F-price">￥49.90</div>
+                        <div class="inx-1F-cprice">参考价：￥69.90</div>
+                    </li>
+                    <li>
+                        <div class="inx-1F-right-img">
+                            <img src="../image/index/SP_3020_302000213957_01_10007.jpg" alt=""/>
+                        </div>
+                        <div class="ware"><a href="#">五粮液 52度白酒 500ml</a></div>
+                        <div class="inx-1F-price">￥999.90</div>
+                        <div class="inx-1F-cprice">参考价：￥1299.90</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="inx-2F-left">
+                <img src="../image/index/346124731.jpg" alt=""/>
+            </div>
+            <div class="inx-2F-right">
+                <ul>
+                    <li><img src="../image/index/810675539.jpg" alt=""/></li>
+                    <li><img src="../image/index/1143294025.jpg" alt=""/></li>
+                    <li><img src="../image/index/622507728.jpg" alt=""/></li>
+                    <li><img src="../image/index/572667459.jpg" alt=""/></li>
+                    <li><img src="../image/index/1028777717.jpg" alt=""/></li>
+                    <li><img src="../image/index/966977660.jpg" alt=""/></li>
+                </ul>
+            </div>
+            <div class="like">
+                <div class="like-heart">
+                    猜你喜欢
+                    <span>Guess you like</span>
+                </div>
+            </div>
+            <div class="inx-3F">
+                <ol>
+                    <li>
+                        <img src="../image/index/SP_2000_20000375855001_01_10009.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">日本进口 UCC117速溶咖啡 90g</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/1506966578_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">上好佳 玉米卷特优惠装 80g 膨化食品 无反式脂肪酸</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/765426378_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">芙丽芳丝 freeplus 净润洗面霜 100g 氨基酸泡沫 洁面乳 温和洁</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/966209735_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">佳能（Canon）ic MF426dw 黑白激光传真一体机（双面、有线</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/SP_2000_20001040258001_01_10009.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">桂格 即食燕麦片组合装 1000g*2</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="inx-3F">
+                <ol>
+                    <li>
+                        <img src="../image/index/381100382_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">Fendi 芬迪 女士BY THE WAY系列黑色牛皮手提单肩包 8BL125 </a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/1651243769_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">新秀丽 四轮拉杆箱 75/28 红色 mm:400x550x215</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/1396149444_220x220.jpeg" alt=""/>
+                        <div class="inx-3F-name"><a href="">SKG 2519 榨汁机家用 便携榨汁杯 充电款 便携式多功能奶昔水果</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/491309265_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">陈克明 高筋小麦粉 2.5kg</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/201262168_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">朵梵 x言几又瑰力书香臻享礼盒 50ml</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="inx-3F">
+                <ol>
+                    <li>
+                        <img src="../image/index/381100382_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">Fendi 芬迪 女士BY THE WAY系列黑色牛皮手提单肩包 8BL125 </a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/1651243769_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">新秀丽 四轮拉杆箱 75/28 红色 mm:400x550x215</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/1396149444_220x220.jpeg" alt=""/>
+                        <div class="inx-3F-name"><a href="">SKG 2519 榨汁机家用 便携榨汁杯 充电款 便携式多功能奶昔水果</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/491309265_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">陈克明 高筋小麦粉 2.5kg</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                    <li>
+                        <img src="../image/index/201262168_220x220.jpg" alt=""/>
+                        <div class="inx-3F-name"><a href="">朵梵 x言几又瑰力书香臻享礼盒 50ml</a></div>
+                        <div class="inx-3F-price">￥58.0</div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

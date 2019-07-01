@@ -1,0 +1,165 @@
+/* 去除内外边距*/
+*{margin:0;padding: 0;}
+/*登录头部*/
+.header{ height:110px;}
+.head-logo{margin:0 0 0 200px;min-width: 400px;}
+.header-img{
+    float: left;
+    margin-top: 29px;
+}
+/*登陆中间部分*/
+.content{
+    margin: 0 auto;
+    background:url("../image/login/login-body.jpg") no-repeat;
+}
+/*登录主体*/
+.login-main{
+    height:543px;
+    width:488px;
+    margin:0 auto;
+    background:#fff;
+    border:3px solid #c3c3c3;
+}
+a,.fc{
+    font-size: 12px;
+    text-decoration: none;
+    color:#4c4b4b;
+}
+a:hover{
+    color:deepskyblue;
+    text-decoration: underline
+}
+.login-main-center{
+    width:300px;
+    height:441px;
+    padding: 50px 0;
+    margin: 0 94px;
+}
+.login-main-center ul{
+    list-style: none;
+}
+.login-title{
+    height:50px;
+    line-height:45px;
+}
+.login-title-left{
+    float:left;
+    font-size: 18px;
+}
+.login-title-right{
+    float:right;
+    color:#2196f3;
+}
+/*登录输入框*/
+.login-item{
+    clear:both;
+    height:36px;
+    margin: 15px 0;
+    position:relative;
+}
+.ipt{
+    width:300px;
+    height:36px;
+    padding:10px 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.login-item .ipt-user{
+    width:16px;
+    height:16px;
+    position: absolute;
+    top:9px;
+    left:7px;
+}
+.login-item #ipt-yz{
+    width:180px;
+    float: left;
+}
+.login-item .yz{
+    width:100px;
+    height:36px;
+    background:#6188fa;
+    float:right;
+}
+.login-item .yz a{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.fr,.btn{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+}
+.fr a{ color:#4c4b4b;float: right;}
+.fr a:hover{color:deepskyblue;text-decoration: underline}
+.btn{
+    border:0;
+    background:#e6133c;
+    height:36px;
+    color:white;
+    margin-top: 15px;
+}
+.bailian{
+    height:48px;
+    line-height: 48px;
+    text-align:right;
+}
+.bailian a{
+    background: url("../image/login/right-icon.png") no-repeat left;
+    padding-left:20px;
+    vertical-align:middle;
+}
+.fc{
+    text-align: center;
+    color:#999;
+    height: 24px;
+    border-bottom:1px solid #999;
+    line-height: 49px;
+}
+.fc span{
+    padding:0 15px;
+    background: #fff;
+}
+.login-main-bottom{
+    height: 44px;
+    margin-top: 20px;
+    text-align: center;
+}
+.login-main-bottom a{
+    display: inline-block;
+    width:66px;
+    height:22px;
+}
+.bottom-img,.bottom-img2,.bottom-img3{
+    vertical-align: middle;
+    margin:0 10px;
+    height:22px;
+}
+.bottom-img{
+    background-image: url("../image/login/login-cion-1.png");
+}
+.bottom-img2{
+    background-image: url("../image/login/login-cion-2.png");
+}
+.bottom-img3{
+    background-image: url("../image/login/login-cion-3.png");
+}
+/*footer尾部*/
+.footer{
+    text-align: center;
+    margin: 50px 0;
+    min-width: 500px;
+}
+.copr{
+    color:#a59797;
+    font-size: 12px;
+}
+.about_us,.copr,.licence,.number,.web{
+    margin: 10px 0;
+}

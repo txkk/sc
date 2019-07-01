@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body onload="createCode()">
+    <!--登录logo-->
+    <div class="header">
+        <div class="head-logo">
+            <!-- logo图片-->
+            <div class="header-img">
+                <img src="../image/login/logon-logo.png" alt=""/>
+            </div>
+            <!-- 文字图片-->
+            <div class="header-img">
+                <img src="../image/login/logon-logofont.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!-- 中间内容部分-->
+    <div class="content">
+        <div class="login-main">
+            <div class="login-main-center">
+                <ul>
+                    <li>
+                        <!-- header-->
+                        <div class="login-title">
+                            <div class="login-title-left">会员登录</div>
+                            <a href="register.html" class="login-title-right">注册新账号</a>
+                        </div>
+                        <!-- user-input-->
+                        <div class="login-item">
+                            <input type="text" class="ipt" placeholder="用户名/手机号/邮箱"/>
+                            <i><img src="../image/login/userpic.png" alt="" class="ipt-user"/></i>
+                        </div>
+                        <!-- pass-input-->
+                        <div class="login-item">
+                            <input type="password" class="ipt" placeholder="密码"/>
+                            <i><img src="../image/login/passwordpic.png" class="ipt-user"/>
+                            </i>
+                        </div>
+                        <!-- 验证码-input-->
+                        <div class="login-item">
+                            <input type="text" class="ipt" id="ipt-yz" placeholder="验证码"/>
+                            <i><img src="../image/login/userpic.png" alt="" class="ipt-user"/></i>
+                            <div class="yz"><a href="javascript:" id="yzm" onclick="createCode()"></a></div>
+                        </div>
+                        <div class="fr">
+                            <div><a href="#">忘记密码？</a></div>
+                        </div>
+                        <div><button class="btn">登录</button></div>
+                        <div class="bailian"><a href="">百联通会员卡首次登录</a></div>
+                        <div class="fc"><span>其他账号联合登录</span></div>
+                        <div class="login-main-bottom">
+                            <a href="" class="bottom-img"></a>
+                            <a href="" class="bottom-img2"></a>
+                            <a href="" class="bottom-img3"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部-->
+    <div class="footer">
+        <div class="about_us">
+            <a href="#">关于我们</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#">加盟合作</a>
+            <span>|</span>
+            <a href="#">诚征英才</a>
+            <span>|</span>
+            <a href="#">友情链接</a>
+            <span>|</span>
+            <a href="#">新零售合作</a>
+        </div>
+        <div class="copr">
+            百联集团有限公司版权所有
+            <span>|</span>
+            客服电话：400-900-8800
+            <span>|</span>
+            沪ICP备15028847号
+        </div>
+        <div class="number">
+            <a href="#">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a>
+        </div>
+        <div class="licence">
+            <a href="#">全渠道增值电信业务经营许可证</a>
+        </div>
+        <div class="web">
+            <a href="#"><img src="../image/login/gongan.png" alt=""/>沪公网安备 31010102002366号 </a>
+            <a href="#"><img src="../image/login/wangjing.png" alt=""/> 网购大家评</a>
+            <a href="#"><img src="../image/login/zhizhao.png" alt=""/>经营执照</a>
+        </div>
+    </div>
+    <script>
+        var code="";
+        function createCode(){
+            code="";
+            var arr=[0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f","g","h","i","g","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","R","F","G","H","I","G","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+            var codeLendth=4;
+            for(var i=0;i<codeLendth;i++){
+                var sum=Math.floor(Math.random()*arr.length);
+                code+=arr[sum];
+            }
+            yzm.innerHTML=code;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css"/>
+    <style>
+        .reg-content{
+            width:950px;
+            margin: 0 auto;
+            clear: both;
+        }
+        .reg-main-content{
+            width:100%;
+            border:1px solid #ddd7d7;
+            box-shadow:0 20px 10px #e8e8e8;
+        }
+        .reg-main-top{
+            border-bottom: 1px solid #ddd7d7;
+            padding:10px;
+            color:red;
+        }
+        .reg-main-top a{
+            color: #00aeef;
+            padding: 0 5px;
+        }
+        .reg-main-top:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .reg-main-top-left{
+            float: left;
+        }
+        .reg-main-top-right{
+            float:right;
+            font-size: 12px;
+            color: #746f6f;
+        }
+        .reg-main-middle{
+            padding:50px 0 74px 191px;
+        }
+        .reg-main-line{
+            padding: 10px 0;
+            height:36px;
+            width:inherit;
+        }
+        .reg-main-line span{
+            height: 32px;
+            line-height: 32px;
+            font-size: 12px;
+        }
+        .admin{
+            float:left;
+            line-height: 36px;
+            width: 136px;
+            text-align: right;
+        }
+        .reg_name input{
+            float: left;
+            width:258px;
+            height:32px;
+            margin: 0 10px;
+            padding-left: 25px;
+            border: 1px solid #bebebe;
+        }
+        .reg_name{
+            position: relative;
+        }
+        .reg_name i{
+            color:red;
+            padding-right: 10px;
+        }
+        .protocol{
+            padding-left: 146px;
+        }
+        .protocol a{
+            color:#0088ca
+        }
+        .btn{
+            width:258px;
+            margin-top: 20px;
+        }
+        .username{
+            background: url("../image/login/register.png") no-repeat;
+            background-position:5px 7px ;
+        }
+        .pass,.qpass,.ycode{
+            background: url("../image/login/register.png") no-repeat;
+            background-position:5px -53px ;
+        }
+        .ycode{
+            width: 148px !important;
+        }
+        .phone{
+            background: url("../image/login/register.png") no-repeat;
+            background-position:5px -181px ;
+        }
+        .email{
+            background: url("../image/login/register.png") no-repeat;
+            background-position:5px -288px ;
+        }
+        .yz{
+            width:100px;
+            height:34px;
+            background:#6188fa;
+            float: left;
+        }
+        .yz a{
+            width: 100px;
+            height: 34px;
+            line-height: 34px;
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body onload="createCode()">
+<div class="header">
+    <div class="head-logo">
+        <!-- logo图片-->
+        <div class="header-img">
+            <img src="../image/login/logon-logo.png" alt=""/>
+        </div>
+        <!-- 文字图片-->
+        <div class="header-img">
+            <img src="../image/login/logon-logofont.png" alt=""/>
+        </div>
+    </div>
+
+</div>
+<div class="reg-content">
+    <div class="reg-main-content">
+        <div class="reg-main-top">
+            <div class="reg-main-top-left">您好，感谢您加入i百联</div>
+            <div class="reg-main-top-right">如有账号,请点击<a href="login.html">登录</a></div>
+        </div>
+        <div class="reg-main-middle">
+            <div class="reg-main-line">
+                <div class="reg_name">
+                    <div class="admin"><i>*</i>用户名:</div>
+                    <div><input type="text" class="username" placeholder="6-20位字符,支持字母或字母与数字组合"/>
+                        <span>账号不能为空</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-main-line">
+                <div class="reg_name">
+                    <div class="admin"><i>*</i>登录密码:</div>
+                    <div><input type="password" class="pass" placeholder="8-20位字符,至少使用两种字符组合"/>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-main-line">
+                <div class="reg_name">
+                    <div class="admin"><i>*</i>确认密码:</div>
+                    <div><input type="password" class="qpass" placeholder="请再次输入密码"/>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-main-line">
+                <div class="reg_name">
+                    <div class="admin"><i>*</i>手机号:</div>
+                    <div><input type="text" class="phone" placeholder="请输入11位手机号码"/>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-main-line">
+                <div class="reg_name">
+                    <div class="admin"><i>*</i>验证码:</div>
+                    <input type="text" class="ycode" placeholder="请输入验证码"/>
+                    <div class="yz"><a href="javascript:" id="yzm" onclick="createCode()"></a></div>
+                        <span></span>
+                    </div>
+            </div>
+            <div class="reg-main-line">
+                <div class="reg_name">
+                    <div class="admin"><i>*</i>电子邮箱:</div>
+                    <div><input type="text" class="email" placeholder="请输入有效邮箱"/>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="protocol">
+                <input type="checkbox" checked/>
+                <span>我已阅读并同意</span>
+                <a href="#">《百联通会员协议》、</a>
+                <a href="">《安付宝用户服务协议》</a>
+                <button class="btn">立即注册&nbsp; 完成绑定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 尾部-->
+<div class="footer">
+    <div class="about_us">
+        <a href="#">关于我们</a>
+        <span>|</span>
+        <a href="#">联系我们</a>
+        <span>|</span>
+        <a href="#">加盟合作</a>
+        <span>|</span>
+        <a href="#">诚征英才</a>
+        <span>|</span>
+        <a href="#">友情链接</a>
+        <span>|</span>
+        <a href="#">新零售合作</a>
+    </div>
+    <div class="copr">
+        百联集团有限公司版权所有
+        <span>|</span>
+        客服电话：400-900-8800
+        <span>|</span>
+        沪ICP备15028847号
+    </div>
+    <div class="number">
+        <a href="#">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a>
+    </div>
+    <div class="licence">
+        <a href="#">全渠道增值电信业务经营许可证</a>
+    </div>
+    <div class="web">
+        <a href="#"><img src="../image/login/gongan.png" alt=""/>沪公网安备 31010102002366号 </a>
+        <a href="#"><img src="../image/login/wangjing.png" alt=""/> 网购大家评</a>
+        <a href="#"><img src="../image/login/zhizhao.png" alt=""/>经营执照</a>
+    </div>
+
+</div>
+<script>
+    var code="";
+    function createCode(){
+        code="";
+        var arr=[0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f","g","h","i","g","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","R","F","G","H","I","G","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+        var codeLendth=4;
+        for(var i=0;i<codeLendth;i++){
+            var sum=Math.floor(Math.random()*arr.length);
+            code+=arr[sum];
+        }
+        yzm.innerHTML=code;
+    }
+</script>
+</body>
+</html>
